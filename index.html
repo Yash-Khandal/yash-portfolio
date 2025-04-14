@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Khandal - Portfolio</title>
-    <link rel="icon" href="favicon-32x32.png" type="image/png">
+    <link rel="icon" href="pngtree-vector-portfolio-icon-png-image_711172.jpg" type="image/jpg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -12,15 +12,26 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#marksheet">Marksheet</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">YK</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#marksheet" class="nav-link">Marksheet</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <header id="home">
@@ -185,6 +196,25 @@
                     <div class="marksheet-actions">
                         <a href="12th.pdf" class="view-btn" target="_blank">View</a>
                         <a href="12th.pdf" class="download-btn" download="senior-secondary-marksheet.pdf">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2 class="section-title">My Resume</h2>
+        <div class="resume-container">
+            <div class="resume-item">
+                <div class="project-img">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="resume-info">
+                    <h3 class="resume-title">Professional Resume</h3>
+                    <p class="resume-description">View my comprehensive professional resume highlighting my skills, experience, and achievements.</p>
+                    <div class="resume-actions">
+                        <a href="resume 6.pdf" class="view-btn" target="_blank">View</a>
+                        <a href="resume 6.pdf" class="download-btn" download="yash-khandal-resume.pdf">Download</a>
                     </div>
                 </div>
             </div>

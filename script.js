@@ -90,3 +90,52 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize Three.js
     initThreeJS();
 });
+
+// Mobile menu functionality
+const mobileMenu = document.getElementById('mobile-menu');
+const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
+
+mobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// Close mobile menu when clicking a link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
+// Active state for navigation links
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const scrollPosition = window.scrollY;
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${sectionId}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+});
+
+// Navbar background change on scroll
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+        nav.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
+    } else {
+        nav.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+    }
+});
