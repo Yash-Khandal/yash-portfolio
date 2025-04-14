@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-web",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD\r # Portfolio-Responsive-Design\r =======\r # yash-portfolio\r >>>>>>> f03304bfb0ba1876aeae80027d28f295e4a4b02d",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
